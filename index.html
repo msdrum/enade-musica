@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Tópicos em Jazz</title>
+</head>
+
+<body>
+  <!-- Tela geral que abraça todo o jogo -->
+  <section id="start-screen">
+    <!-- tela inicial de captura do nome e botão de jogar -->
+
+
+    <div id="sc-container">
+      <div>
+        <h1 id="title-start-screen">Tópicos em Jazz</h1>
+      </div>
+
+      <div id="start-name">
+        <label class="label-start-screen">Qual o seu nome?</label>
+        <input type="text" placeholder="Digite o seu nome" id="input-name" />
+      </div>
+
+      <div>
+        <button id="btn-start">Jogar</button>
+      </div>
+
+
+    </div>
+
+
+    <!-- primeira tela do jogo -->
+    <div id="qs-container" class="hide">
+      <div class="title-question">
+        <h2 class="title-quiz-screen">Olá <span id="name"></span>, seja bem vindo(a)!</h2>
+        <div id="question-wrapper">
+          <h3 class="question-number"></h3>
+          <h3 id="first-question"></h3>
+        </div>
+      </div>
+
+      <!-- box com as respostas -->
+      <div class="awnsers-box">
+        <button class="awnser"></button>
+        <button class="awnser"></button>
+        <button class="awnser"></button>
+        <button class="awnser"></button>
+
+      </div>
+
+
+    </div>
+
+    <div id="final-screen-lose" class="hide">
+      <h2 class="title-quiz-screen"> Ooops! <span class="loser-name"> </span>, try again...</h2>
+      <img src="./assets/need_practice_miles.jpg" alt="Miles Davis meme" class="miles-meme">
+      <button id="bnt-final">Tentar Novamente</button>
+      <button id="init-screen">Quit</button>
+
+    </div>
+
+    <div id="final-screen-win" class="hide">
+      <h2 class="title-quiz-screen">Congrats!!! <span class="win-name"></span>, you're a jazz musician!</h2>
+      <img src="./assets/cool.gif" alt="axel-foley-gif" class="cool">
+      <button id="bnt-final-win">Tentar Novamente</button>
+      <button id="inicial-screen">Quit</button>
+
+    </div>
+
+  </section>
+
+
+  <!--linking the index.js-->
+  <script src="./scripts/JazzTopics.js"></script>
+  <script src="./scripts/index.js"></script>
+
+</body>
+
+</html>
